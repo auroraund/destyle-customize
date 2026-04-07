@@ -346,10 +346,12 @@ textarea {
 }
 
 /**
- * Fix appearance for Firefox
+ * Standardize appearance for [type="number"]
+ * Use standard appearance property with -moz prefix for backward compatibility.
  */
 [type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield; /* Standard property */
+  -moz-appearance: textfield; /* Backward compatibility for Firefox */
 }
 
 /**
